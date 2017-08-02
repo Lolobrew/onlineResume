@@ -1,0 +1,63 @@
+.nav{
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 2%;
+    border-right: 1px solid #ccc;
+}
+
+li {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10px;
+    background-color: aliceblue;
+    text-align: center;
+    border: 1px solid lightslategray;
+    font-size: 16px;
+    color: lightslategray;
+}
+
+li:hover {
+    background-color: lightcyan;
+    font-size: 17px; 
+    transition: .25s;
+}
+
+li.active {
+    background-color: lightslategray;
+    color: lightcyan;
+    font-size: 17px;
+    transition: 2s;
+}
+
+.tab-pane h1 {
+    text-align: center;
+    margin-top: 15%;
+    font-family: 'Bellefair', serif;
+}
+.tab-pane p {
+    text-indent: 10px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: -5%;
+}
+.contact {
+    float: right;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    background-color: aliceblue;
+    padding-top: 3%;
+}
+
+img {
+    height: 40%;
+    width: 40%;
+    border-radius: 100%;
+}
+
+.card-title {
+    font-family: "Bellefair", serif;
+}
+
+.footer {
+    clear: both;
+}
