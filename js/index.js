@@ -17,7 +17,8 @@ $('.tablinks').on('click', function(){
         if ($(this).attr('id') !== link){
             $(this).hide();
         } else {
-            $(this).show();
+            //$(this).show();
+            $(this).slideDown (750);
         }
     });
 });
