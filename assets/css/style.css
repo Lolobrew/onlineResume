@@ -1,6 +1,7 @@
+
 .nav{
     cursor: pointer;
-    margin-top: 5%;
+    margin-top: 8%;
     margin-left: 2%;
     border-right: 1px solid #ccc;
 }
@@ -12,28 +13,29 @@ li {
     background-color: aliceblue;
     text-align: center;
     border: 1px solid lightslategray;
-    font-size: 16px;
-    color: lightslategray;
+    font-size: 18px;
+    font-family: 'Bellefair', serif;
 }
 
 li:hover {
-    background-color: lightcyan;
-    font-size: 17px; 
+    background-color: lightblue; 
     transition: .25s;
 }
 
 li.active {
     background-color: lightslategray;
-    color: lightcyan;
-    font-size: 17px;
+    color: lightblue;
     transition: 2s;
+    
 }
+
 
 .tab-pane h1 {
     text-align: center;
     margin-top: 15%;
     font-family: 'Bellefair', serif;
 }
+
 .tab-pane p {
     text-indent: 10px;
     margin-top: 5%;
@@ -42,16 +44,21 @@ li.active {
 }
 .contact {
     float: right;
+    margin-right: 1%;
     text-align: center;
     border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
     background-color: aliceblue;
     padding-top: 3%;
+    padding-bottom: 5%;
 }
 
 img {
     height: 40%;
     width: 40%;
     border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid lightslategray;
 }
 
 .card-title {
@@ -60,4 +67,5 @@ img {
 
 .footer {
     clear: both;
+    border-top: 1px solid #ccc;
 }
