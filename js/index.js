@@ -1,6 +1,9 @@
 $(document).ready(function(){
-    $('.tab-pane').hide();
-    $('.defaultOpen').show();
+    //$('.card').hide();
+    $('.defaultOpen').fadeIn(2500);
+    $('img').hide();
+    //$('.card').slideDown(2500);
+    $('img').fadeIn(3000);
 });
 
 $('.tablinks').on('click', function(){
@@ -18,7 +21,8 @@ $('.tablinks').on('click', function(){
             $(this).hide();
         } else {
             //$(this).show();
-            $(this).slideDown (750);
+            $(this).addClass("animated fadeInDown");
+            $(this).show();
         }
     });
 });

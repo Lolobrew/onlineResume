@@ -16,8 +16,9 @@
     <!-- Google Fonts "Bellefair" -->
     <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<title>Online Portfolio</title>
 
@@ -27,58 +28,87 @@
     <div class = "container-fluid">
         <div class="row">
 
-            <ul class = "nav nav-pills nav-stacked col-md-1">
+            <ul class = "nav nav-pills nav-stacked col-md-1 animated flipInX">
                 <li class="tablinks" id="aboutme">About Me</li>
                 <li class="tablinks" id="profilelinks">Profile Links</li>
                 <li class="tablinks" id="projectlinks">Project Links</li>
                 <li class="tablinks" id="education">Education</li>
+                <li class="tablinks" id="experience">Experience</li>
             </ul>
 
             <div class="tab-content col-md-7">
                 <div class="tab-pane defaultOpen" id = "aboutme">
-                    <h1 class="header">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsam, deleniti sed, veritatis, ad aspernatur explicabo quibusdam expedita libero ducimus, facilis fugiat accusamus assumenda sunt debitis laudantium quasi laborum. Magnam!</p>
+                    <h1>About Me</h1>
+                    <p>Focused and driven individual who loves to learn, seeking a position as a full time web-developer.
+                         Great knowledge of HTML5, CSS3, JavaScript, JQuery, Bootstrap, NodeJS and experience with Firebase, MongoDB and MySQL, though a quick learner and eager to train in any web or software application.
+                          Also very proficient with office administration, and leadership roles.</p>
                 </div>
                 <div class="tab-pane" id = "profilelinks">
-                    <h1 class="header">Profile Links</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsam, deleniti sed, veritatis, ad aspernatur explicabo quibusdam expedita libero ducimus, facilis fugiat accusamus assumenda sunt debitis laudantium quasi laborum. Magnam!</p>
+                    <h1>Profile Links</h1>
+                    <p>Please view my past or current projects via Github, and some social media platforms such as LinkedIn or Twitter.</p>
                     <br>
                     <ul class="falinks">
 
-                        <a class= "btn btn-md" id="githubbtn" href= "#">
-                            <i class="fa fa-github-square fa-5x" aria-hidden="true"></i>
+                        <a class= "btn btn-md" id="githubbtn" href= "https://github.com/Lolobrew" target="_blank">
+                            <i class="fa fa-github-square fa-4x" aria-hidden="true"></i>
                         </a>
-                        <a class= "btn btn-md btn-primary" id="linkedinbtn" href='#'>
-                            <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                        <a class= "btn btn-md btn-primary" id="linkedinbtn" href='https://www.linkedin.com/in/jeffschultzjs/'target="_blank">
+                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
                         </a>
-                        <a class = "btn btn-md btn-warning" id="stackoverflowbtn" href="#">
-                            <i class="fa fa-stack-overflow fa-3x" aria-hidden="true"></i>
+                        <a class = "btn btn-md btn-warning" id="stackoverflowbtn" href="https://stackoverflow.com/users/7735701/lolobrew?tab=profile" target="_blank">
+                            <i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i>
                         </a>
-                        <a class="btn btn-mg btn-info" id="twitterbtn" href="#">
-                            <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+                        <a class="btn btn-mg btn-info" id="twitterbtn" href="https://twitter.com/Lolobrew1" target="_blank">
+                            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
                         </a>
                     </ul>
                 </div>
                 <div class="tab-pane" id = "projectlinks">
-                    <h1 class="header">Project Links</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsam, deleniti sed, veritatis, ad aspernatur explicabo quibusdam expedita libero ducimus, facilis fugiat accusamus assumenda sunt debitis laudantium quasi laborum. Magnam!</p>
+                    <h1>Project Links</h1>
+                    <p>Here are some links to current or past projects that I've worked on. Please feel free to ask me any questions!</p>
                 </div>
                 <div class="tab-pane" id = "education">
-                    <h1 class="header">Education</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsam, deleniti sed, veritatis, ad aspernatur explicabo quibusdam expedita libero ducimus, facilis fugiat accusamus assumenda sunt debitis laudantium quasi laborum. Magnam!</p>
+                    <h1>Education</h1>
+                    <p><strong>University of Arizona, Phoenix, AZ</strong><br><br>
+                         April 2017-October 2017<br><br>
+                         An intensive 6-month long boot camp dedicated to designing and building web applications. 
+                         Skills learned include HTML, CSS, JavaScript, JQuery, Bootstrap, Firebase, Node JS, MySQL, MongoDB, Express, Handlebars, React JS.
+                    </p>
+                </div>
+                <div class="tab-pane" id="experience">
+                    <h1>Experience</h1>
+                    <p><strong>El Encanto Restaurants</strong><br><br>
+                        February 2010-Current<br><br>
+                        General Manager<br>
+                        Relevant experience includes working with and supervision of teams up to 50 people. Handling all office administration tasks including hiring and documentation.
+                        I've created multiple spread sheets for labor, tipout, and inventory control that are now implemented company wide. I feel very comfortable working with any size team and with no supervision, while still being able to acheive goals.
+                    </p><br>
+                    <h1>References</h1>
+                    <div class="reful">
+                        <ul id="refNames">
+                            <li>Justin Burford</li>
+                            <li>Robert Tan</li>
+                            <li>Maria Johnson</li>
+                        </ul>
+                        <ul id="refNums">
+                            <li>phone 1</li>
+                            <li>phone 2</li>
+                            <li>phone 3</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-3 contact card">
+            <div class="col-md-3 contact card animated slideInDown">
                 <img class="img" src="assets/images/portfoliopic.jpg" alt="pictures">
                 <div class="card-block">
                     <h1 class="card-title">Jeffrey Schultz</h1>
                     <p class="card-text">Thanks for visiting my page!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nam eligendi cum, tempora porro harum sint optio suscipit ducimus earum! Velit provident, delectus minima. Placeat libero, esse in sed corporis.</p>
+                    <p>Please feel free to contact me at any time.</p>
                     <br>
                     <h4><strong>Phone: </strong> 623-258-3640</h4>
                     <br>
-                    <h4><strong>Email: </strong> <a href = "#">jeffschultz.js@gmail.com</a></h4>
+                    <h4><strong>Email: </strong> <a href = "mailto:jeffschultz.js@gmail.com?Subject=Profile%20Page">jeffschultz.js@gmail.com</a></h4>
                     <br>
                     <h4><strong>City: </strong> Phoenix, AZ</h4>
                     <br>
