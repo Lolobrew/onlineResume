@@ -16,6 +16,7 @@
     <!-- Google Fonts "Bellefair" -->
     <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
 
+    <!-- animate css -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -25,7 +26,7 @@
 </head>
 
 <body>
-    <div class = "container-fluid">
+    <div class = "container-fluid wrapper">
         <div class="row">
 
             <ul class = "nav nav-pills nav-stacked col-md-1 animated flipInX">
@@ -80,52 +81,153 @@
                     <p><strong>El Encanto Restaurants</strong><br><br>
                         February 2010-Current<br><br>
                         General Manager<br>
-                        Relevant experience includes working with and supervision of teams up to 50 people. Handling all office administration tasks including hiring and documentation.
-                        I've created multiple spread sheets for labor, tipout, and inventory control that are now implemented company wide. I feel very comfortable working with any size team and with no supervision, while still being able to acheive goals.
-                    </p><br>
+                        Relevant experience includes working with and supervision of teams up to 50 people, handling all office administration tasks including hiring and documentation, inventory and cash management, and customer service.
+                        I've created multiple spread sheets for labor, tipout, and inventory systems that are now implemented company wide. I feel very comfortable working with little to no supervision, alone or with a team, while still being able to acheive goals.
+                    </p>
                     <h1>References</h1>
+                    <br>
                     <div class="reful">
                         <ul id="refNames">
+                            <li>Josh Liska</li>
                             <li>Justin Burford</li>
-                            <li>Robert Tan</li>
                             <li>Maria Johnson</li>
                         </ul>
                         <ul id="refNums">
-                            <li>phone 1</li>
-                            <li>phone 2</li>
-                            <li>phone 3</li>
+                            <li>(623) 806-6010</li>
+                            <li>(623) 687-0241</li>
+                            <li>(480) 309-0987</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3 contact card animated slideInDown">
-                <img class="img" src="assets/images/portfoliopic.jpg" alt="pictures">
+                <img class="img portfoliopic" src="assets/images/portfoliopic.jpg" alt="pictures">
                 <div class="card-block">
                     <h1 class="card-title">Jeffrey Schultz</h1>
-                    <p class="card-text">Thanks for visiting my page!</p>
+                    <p>Thanks for visiting my page!</p>
+                    <br>
                     <p>Please feel free to contact me at any time.</p>
                     <br>
-                    <h4><strong>Phone: </strong> 623-258-3640</h4>
-                    <br>
-                    <h4><strong>Email: </strong> <a href = "mailto:jeffschultz.js@gmail.com?Subject=Profile%20Page">jeffschultz.js@gmail.com</a></h4>
-                    <br>
-                    <h4><strong>City: </strong> Phoenix, AZ</h4>
-                    <br>
+                    <h5><strong>Phone: </strong> 623-258-3640</h5>
+                    <h5><strong>Email: </strong> <a data-toggle="modal" data-target="#myModal" href = "#">jeffschultz.js@gmail.com</a></h5>
+                    <h5><strong>City: </strong> Phoenix, AZ</h5>
+                    <br><br>
+                            <!-- carousel -->
+                    <div class="container-flex">            
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active animated lightSpeedIn">
+                                    <img src="assets/images/motorcycling.jpg" alt="StarWars">
+                                    <div class="carousel-caption">
+                                        <p>Motorcyling</p>
+                                    </div>
+                                </div>
+                                <div class="item animated bounceInUp">
+                                    <img src="assets/images/homebrewing.jpg" alt="JurassicWorld">
+                                    <div class="carousel-caption">
+                                        <p>HomeBrewing</p>
+                                    </div>
+                                </div>
+                                <div class="item animated rollIn">
+                                    <img src="assets/images/hiking.jpg" alt="Kingsman">
+                                    <div class="carousel-caption">
+                                        <p>Hiking</p>
+                                    </div>
+                                </div>
+                                <div class="item animated zoomInUp">
+                                    <img src="assets/images/dogs.jpg" alt="GuardiansoftheGalaxy">
+                                    <div class="carousel-caption">
+                                        <p>My Boys</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>
-           
-		<footer class="footer">
-			<p class="text-center">&copy; 2017 Jeff Schultz</p>
-		</footer>			
+
+          <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+    
+            <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                         <h4 class="modal-title">Send me a message</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-flex logindiv animated fadeIn">
+                            <form>
+                    
+                                <div class = "form-group row">
+                                    <label for="email" class="col-sm-2 col-form-label">Email: </label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                </div>                     
+                 
+                                <div class = "form-group row">
+                                    <label for="title" class="col-sm-2 col-form-label">Subject: </label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="title">
+                                    </div>
+                                </div> 
+                                
+                                <div class = "form-group row">
+                                    <label for="message" class="col-sm-2 col-form-label">Message: </label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" id="message"></textarea>
+                                    </div>
+                                </div> 
+                                
+                                
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="sendBtn">SEND</button>
+                    </div>
+                </div>      
+            </div>
+        </div>
+  
+     <!--wrapping container -->
+    </div>         
+
+	<footer class="footer">
+		<p class="text-center">&copy; 2017 Jeff Schultz</p>
+	</footer>			
 		
 
-    <!--wrapping container -->
-    </div>
+
 
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
-    <script type = "text/javascript" src="js/index.js"></script>
+    
+    <!-- Latest compiled and minified JavaScript (bootstrap) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script type = "text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>

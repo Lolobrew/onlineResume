@@ -1,5 +1,8 @@
+.wrapper {
+    min-height: calc(100vh - 70px);
+}
 
-.nav{
+.nav {
     cursor: pointer;
     margin-top: 8%;
     margin-left: 2%;
@@ -15,6 +18,7 @@
     border: 1px solid lightslategray;
     font-size: 18px;
     font-family: 'Bellefair', serif;
+    box-shadow: 2px 4px 5px #ccc;
 }
 
 .tablinks:hover {
@@ -48,11 +52,13 @@
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     background-color: aliceblue;
-    padding-top: 3%;
-    padding-bottom: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: 0px 10px 10px #ccc;
+    min-height: calc(100vh - 100px);
 }
 
-img {
+.portfoliopic {
     height: 40%;
     width: 40%;
     border-radius: 100%;
@@ -67,10 +73,17 @@ img {
 .footer {
     clear: both;
     border-top: 1px solid #ccc;
+    height: 50px;
+    
 }
 
+.footer p {
+    margin-top: 20px;
+}
+
+
 .falinks a {
-    margin-right: 10%;
+    margin-left: 5%;
 }
 
 .fa-github-square {
@@ -87,10 +100,16 @@ img {
 
 .reful {
     text-align: center;
+    margin-left: -3%;
 }
 
 #refNames, #refNums {
-    display: inline-table;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#message {
+    height: 200px;
 }
 
 @media screen and (max-width: 1005px) and (min-width: 0px) {
