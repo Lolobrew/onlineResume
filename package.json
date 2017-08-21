@@ -1,0 +1,26 @@
+{
+  "name": "onlineresume",
+  "version": "1.0.0",
+  "description": "online resume Jeff Schultz",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.4",
+    "nodemailer": "^4.0.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lolobrew/onlineResume.git"
+  },
+  "author": "Jeff Schultz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lolobrew/onlineResume/issues"
+  },
+  "homepage": "https://github.com/Lolobrew/onlineResume#readme"
+}
