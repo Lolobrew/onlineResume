@@ -1,7 +1,7 @@
 var express = require("express");
 var path = require("path");
 
-var PORT = 8080;
+var PORT = process.env.PORT || 8080;
 
 var app = express();
 
@@ -11,6 +11,6 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.listen(process.env.PORT, function(){
+app.listen(PORT, function(){
     console.log("Listening on Port " + PORT);
 });
