@@ -44,12 +44,11 @@ $('#sendBtn').on('click', function(event){
         //console.log(text);
         
 
-        $.get("https://jeffschultzresume.herokuapp.com/send",{from:from, subject:subject, text:text}, function(data){
+        $.get("https://jeffschultzresume.herokuapp.com/send", {from:from, subject:subject, text:text})
+        .done(function(data) {
             console.log(data);
-            if (data == "sent"){
-                $('#myModal').modal('toggle');
-                alert("Your email has been sent. Thank you!");
-            }
-            
+            $('#myModal').modal('toggle');
+            alert("Your email has been sent. Thank you!");
         });
+        
 });
