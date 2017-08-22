@@ -28,12 +28,11 @@ app.get('/send', function(req, res) {
 
   var mailOptions={
     to : "jeffschultz.js@gmail.com",
-    from: req.query.from,
     subject : req.query.subject,
     text : req.query.text
   }
 
-  console.log(mailOptions);
+  //console.log(mailOptions);
 
   smtpTransport.sendMail(mailOptions, function(error, response){
     if (error){
