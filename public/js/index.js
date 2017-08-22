@@ -35,25 +35,21 @@ $('.tablinks').on('click', function(){
 //send email w/ nodemailer
 $('#sendBtn').on('click', function(event){
     var from, subject, text;
-
-
-    $("#send_email").click(function(){      
-        var from = $('#email').val().trim();
-        console.log(from);
-        var subject = $("#title").val();
-        console.log(subject);
-        var text = $('#message').val();
-        console.log(text);
+      
+        from = $('#email').val().trim();
+        //console.log(from);
+        subject = $("#title").val();
+        //console.log(subject);
+        text = $('#message').val();
+        //console.log(text);
         
 
         $.get("https://jeffschultzresume.herokuapp.com/send",{from:from, subject:subject, text:text}, function(data){
-            if (data =="sent") {
-                $('#email').val("");
-                $('#title').val("");
-                $('#message').val("");
+            console.log(data);
+            if (data == "sent"){
                 $('#myModal').modal('toggle');
-                alert('Your email has been sent, thank you!');
+                alert("Your email has been sent. Thank you!");
             }
+            
         });
-    });
 });
