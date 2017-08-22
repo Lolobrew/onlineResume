@@ -43,7 +43,7 @@ $('#sendBtn').on('click', function(event){
         text = $('#message').val();
         //console.log(text);
 
-        text += " Sender:  " + from;
+        text += "       ||  Sender: " + from;
         
 
         $.get("https://jeffschultzresume.herokuapp.com/send", {from:from, subject:subject, text:text})
