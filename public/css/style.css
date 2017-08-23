@@ -47,6 +47,7 @@
 
 .contact {
     float: right;
+    margin-top: 1%;
     margin-right: 1%;
     text-align: center;
     border-left: 1px solid #ccc;
@@ -63,11 +64,15 @@
     width: 40%;
     border-radius: 100%;
     border-radius: 100%;
-    border: 2px solid lightslategray;
+    border: 2px solid #ccc;
 }
 
 .card-title {
     font-family: "Bellefair", serif;
+}
+
+#hobbyCarousel {
+    border: 2px solid #ccc;
 }
 
 .footer {
@@ -98,7 +103,7 @@
     text-indent: 0px;
 }
 
-.reful {
+.referencesUl {
     text-align: center;
     margin-left: -3%;
 }
