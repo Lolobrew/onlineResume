@@ -112,6 +112,14 @@
     height: 200px;
 }
 
+#emailMessage {
+    float: left;
+}
+
+#sendBtn {
+    margin-right: 20px;
+}
+
 @media screen and (max-width: 1005px) and (min-width: 0px) {
     .nav {
         margin-top: -5%;

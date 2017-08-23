@@ -45,12 +45,16 @@ $('#sendBtn').on('click', function(event){
 
         text += "       ||  Sender: " + from;
         
+        $('#emailMessage').html("Your email is sending, please wait.");
 
         $.get("https://jeffschultzresume.herokuapp.com/send", {from:from, subject:subject, text:text})
         .done(function(data) {
             console.log(data);
+            $('#email').val("");
+            $('#title').val("");
+            $('#message').val("");
+            $('#emailMessage').html("Your email has been sent. Thank you!");
             $('#myModal').modal('toggle');
-            alert("Your email has been sent. Thank you!");
         });
         
 });
