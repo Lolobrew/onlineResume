@@ -46,7 +46,7 @@ $('#sendBtn').on('click', function(event){
         text += "       ||  Sender: " + from;
         
 
-        $.get("https://jeffschultzresume.herokuapp.com/send", {from:from, subject:subject, text:text})
+        $.get("http://jeffschultzresume.herokuapp.com/send", {from:from, subject:subject, text:text})
         .done(function(data) {
             console.log(data);
             $('#myModal').modal('toggle');
