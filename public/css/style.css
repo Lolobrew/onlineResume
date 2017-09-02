@@ -1,146 +1,85 @@
-.wrapper {
-    min-height: calc(100vh - 70px);
-}
 
-.nav {
-    cursor: pointer;
-    margin-top: 8%;
-    margin-left: 2%;
-    border-right: 1px solid #ccc;
-}
-
-.tablinks {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    padding: 10px;
-    background-color: aliceblue;
+#navWrap {
+    background-color: black;
     text-align: center;
-    border: 1px solid lightslategray;
-    font-size: 18px;
-    font-family: 'Bellefair', serif;
-    box-shadow: 2px 4px 5px #ccc;
-}
-
-.tablinks:hover {
-    background-color: #AED6F1; 
-    transition: .25s;
-}
-
-.tablinks.active {
-    background-color: #8BD6EE;
-    transition: 2s;    
-}
-
-
-.tab-pane h1 {
-    text-align: center;
-    margin-top: 15%;
-    font-family: 'Bellefair', serif;
-}
-
-.tab-pane p {
-    text-indent: 10px;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: -5%;
-}
-
-.contact {
-    float: right;
-    margin-top: 1%;
-    margin-right: 1%;
-    text-align: center;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    background-color: aliceblue;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    box-shadow: 0px 10px 10px #ccc;
-    min-height: calc(100vh - 100px);
-}
-
-.portfoliopic {
-    height: 40%;
-    width: 40%;
-    border-radius: 100%;
-    border-radius: 100%;
-    border: 2px solid #ccc;
-}
-
-.card-title {
-    font-family: "Bellefair", serif;
-}
-
-#hobbyCarousel {
-    border: 2px solid #ccc;
-}
-
-.footer {
-    clear: both;
-    border-top: 1px solid #ccc;
-    height: 50px;
-    
-}
-
-.footer p {
-    margin-top: 20px;
-}
-
-
-.falinks a {
-    margin-left: 5%;
-}
-
-.fa-github-square {
-    color: black;
-}
-
-#education p {
-    text-indent: 0px;
-}
-
-#experience p {
-    text-indent: 0px;
-}
-
-.referencesUl {
-    text-align: center;
-    margin-left: -3%;
-}
-
-#refNames, #refNums {
-    display: inline-block;
-    list-style-type: none;
-}
-
-#message {
-    height: 200px;
-}
-
-#emailMessage {
     float: left;
+    height: 99vh;
+    position: fixed;
+    transition: .3s;
+    z-index: 1000;
 }
 
-#sendBtn {
-    margin-right: 20px;
+.navActive {
+    margin-left: -1vw;
 }
 
-@media screen and (max-width: 1005px) and (min-width: 0px) {
-    .nav {
-        margin-top: -5%;
-    }
+.navInactive {
+    margin-left: -15vw;
+}
 
-    .tablinks {
-        margin-bottom: 5px;
-    }
-    .tab-pane h1 {
-        margin-top: 4%;
-    }
-    .tab-pane {
-        padding-bottom: 5%;
-    }
-    .tab-pane p {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
+.nav h3 {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #7A7E7F;
+}
+
+.nav li {
+    color: #637E95;
+    padding-bottom: 20px;
+    cursor: pointer;
+    text-align: justify;
+}
+
+#navContact {
+    padding-bottom: 40px;
+}
+
+#navLinks a {
+    color: whitesmoke;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#navLinks a:hover {
+    background-color: black;
+    color: #637E95;
+}
+
+#navLinks  li{
+    display: inline-flex;
+    padding: 0;
+}
+
+#caretTab {
+    position: relative;
+    float: right;
+    padding-left: 2px;
+    color: #637E95;
+    cursor: pointer;
+    padding-bottom: 50px;
+}
+
+#portPic {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.jumbotron {
+    min-height: 99vh;
+    min-width: 98.25vw;
+    background-image: url("../images/hiking.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.jumbotron h1{
+    color: whitesmoke;
+}
+
+.jumbotron h2{
+    color: #637E95;
 }
