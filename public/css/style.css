@@ -3,18 +3,19 @@
     background-color: black;
     text-align: center;
     float: left;
-    height: 99vh;
+    min-height: 100%;
     position: fixed;
     transition: .3s;
     z-index: 1000;
+    width: 15%;
 }
 
 .navActive {
-    margin-left: -1vw;
+    margin-left: -1%;
 }
 
 .navInactive {
-    margin-left: -15vw;
+    margin-left: -13.75%;
 }
 
 .nav h3 {
@@ -30,9 +31,14 @@
     text-align: justify;
 }
 
+.nav li:hover {
+    color: #637E95;
+}
+
 #navContact {
     padding-bottom: 40px;
 }
+
 
 #navLinks a {
     color: whitesmoke;
@@ -45,6 +51,10 @@
     color: #637E95;
 }
 
+#navLinks a:visited {
+    background-color: black;
+}
+
 #navLinks  li{
     display: inline-flex;
     padding: 0;
@@ -54,27 +64,33 @@
     color: whitesmoke;
     cursor: pointer;
     float: right;
-    left: -5%;
+    left: -10%;
     top: -5%;
 }
 
 #portPic {
-    height: 50%;
-    width: 50%;
+    height: 35%;
+    width: 35%;
     border-radius: 50%;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-#mainJumbo {
-    min-height: 99vh;
-    min-width: 98.25vw;
-    background-image: url("../images/portpic2.jpg");
+.jumbotron {
+    margin-left: -1%;
+    height: 105vh;
+    width: 99.3vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: -1;
     transition: 1s;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#mainJumbo {
+    background-image: url("../images/portpic2.jpg");
 }
 
 #fullStackDiv {
@@ -86,3 +102,47 @@
 #mainJumbo h2 {
     color: whitesmoke;
 }
+
+#breakDiv1 {
+    background: -webkit-radial-gradient(rgba(245, 245, 245, 0.85), whitesmoke); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(rgba(245, 245, 245, 0.85), whitesmoke); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(rgba(245, 245, 245, 0.85), whitesmoke); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(rgba(245, 245, 245, 0.85), whitesmoke);
+    padding-top: 0px;
+    margin-top: -2%;
+}
+
+#breakDiv1 h3 {
+    font-weight: bolder;
+    color: #66C6C2;
+    text-align: center;
+}
+
+#jumboTwo {
+    margin-top: -2.5vh;
+    background-image: url("../images/phx.jpg");  
+    margin-left: -0.2%;
+}
+
+.typeWriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
