@@ -19,12 +19,13 @@
 
 .nav h3 {
     padding-bottom: 4px;
-    border-bottom: 1px solid #7A7E7F;
+    color: #66C6C2;
+    border-bottom: 1px solid #637E95;
 }
 
 .nav li {
-    color: #637E95;
-    padding-bottom: 20px;
+    color: whitesmoke;
+    padding-bottom: 5px;
     cursor: pointer;
     text-align: justify;
 }
@@ -50,12 +51,11 @@
 }
 
 #caretTab {
-    position: relative;
-    float: right;
-    padding-left: 2px;
-    color: #637E95;
+    color: whitesmoke;
     cursor: pointer;
-    padding-bottom: 50px;
+    float: right;
+    left: -5%;
+    top: -5%;
 }
 
 #portPic {
@@ -66,20 +66,23 @@
     padding-bottom: 40px;
 }
 
-.jumbotron {
+#mainJumbo {
     min-height: 99vh;
     min-width: 98.25vw;
-    background-image: url("../images/hiking.jpg");
+    background-image: url("../images/portpic2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: -1;
+    transition: 1s;
 }
 
-.jumbotron h1{
+#fullStackDiv {
+    color: #66C6C2;
+    font-family: 'Marcellus SC', serif;
+    border-bottom: 2px solid #637E95;
+}
+
+#mainJumbo h2 {
     color: whitesmoke;
-}
-
-.jumbotron h2{
-    color: #637E95;
 }
