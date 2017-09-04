@@ -54,9 +54,19 @@ $(document).ready(function(){
     var waypoints = $('#typeWriter').waypoint(function(direction){
 
         if ($('#typeWriter').hasClass('typeWriter')){
+            $('#typeWriter').empty();
             $('#typeWriter').removeClass('typeWriter');
             $('#typeWriter').addClass('typeWriter');
-            $('#typeWriter').append("<h1 id='typeh1'>Yo What Up, my name is Jeff!</h1>");
+            $('#typeWriter').append("<h2 id='typeh1'>I'm a full stack developer in the Phoenix area.<br></h2>");
+            setTimeout (function(){
+                $('#typeWriter').append("<h2>That's pretty cool right?<br></h2>");
+            }, 3000);
+            setTimeout(function(){
+                $('#typeWriter').append("<h2>For just a small donation of only $500,000,000<br></h2>");
+            }, 6000);
+            setTimeout(function(){
+                $('#typeWriter').append("<h2>I can be yours today!</h2>");
+            }, 9000);
            // $('#typeh1').text("Hi my name is Jeff, whatup yo!");
         }
     }, {
