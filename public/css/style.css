@@ -1,13 +1,16 @@
-
+* {
+    word-wrap: break-word;
+}
 #navWrap {
     background-color: black;
     text-align: center;
     float: left;
-    min-height: 100%;
+    height: 100%;
     position: fixed;
     transition: .3s;
     z-index: 1000;
     width: 15%;
+    border-right: 1px solid #637E95;
 }
 
 .navActive {
@@ -42,8 +45,9 @@
 
 #navLinks a {
     color: whitesmoke;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0;
+    padding: 4px;
 }
 
 #navLinks a:hover {
@@ -78,7 +82,6 @@
 
 .jumbotron {
     margin-left: -1%;
-    height: 105vh;
     width: 99.3vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,10 +94,12 @@
 
 #mainJumbo {
     background-image: url("../images/portpic2.jpg");
+    height: 95vh;
 }
 
 #fullStackDiv {
     color: #66C6C2;
+    text-shadow: -.15px 0 black, 0 .15px black, .15px 0 black, 0 -.15px black;
     font-family: 'Marcellus SC', serif;
     border-bottom: 2px solid #637E95;
 }
@@ -103,36 +108,33 @@
     color: whitesmoke;
 }
 
-#breakDiv1 {
-    background: -webkit-radial-gradient(rgba(245, 245, 245, 0.85), whitesmoke); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(rgba(245, 245, 245, 0.85), whitesmoke); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(rgba(245, 245, 245, 0.85), whitesmoke); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(rgba(245, 245, 245, 0.85), whitesmoke);
+.breakDiv {
+    background-color: black;
     padding-top: 0px;
     margin-top: -2%;
+    height: 10vh;
+    border: 1px solid #637E95;
 }
 
-#breakDiv1 h3 {
-    font-weight: bolder;
-    color: #66C6C2;
-    text-align: center;
-}
 
 #jumboTwo {
-    margin-top: -2.5vh;
+    margin-top: -4vh;
+    height: 95vh;
     background-image: url("../images/phx.jpg");  
     margin-left: -0.2%;
 }
 
 .typeWriter h2 {
+    color: whitesmoke;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgba(250, 250, 250, 0.95); /* The typwriter cursor */
+    border-right: .15em solid #66C6C2; /* The typwriter cursor */
+    padding-right: 0;
+    margin-right: 0;
     overflow-wrap: normal;
     white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end),
+      typing 5.0s steps(50, end),
       blink-caret .75s step-end infinite;
   }
   
@@ -144,6 +146,14 @@
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgba(255, 255, 255, 0.94); }
+    from, to { border-color: #66C6C2 }
+    50% { border-color: transparent }
   }
+
+  #breakDiv1 {
+    margin-top: .5em;
+}
+#breakDiv1 h2 {
+    letter-spacing: .15em;
+    font-weight: bold;
+}

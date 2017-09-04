@@ -51,25 +51,18 @@ $(document).ready(function(){
         removeBounce();
     }, 9000);
 
-    var waypoints = $('#typeWriter').waypoint(function(direction){
+    var waypoints = $('.breakDiv').waypoint(function(direction){
 
-        if ($('#typeWriter').hasClass('typeWriter')){
-            $('#typeWriter').empty();
-            $('#typeWriter').removeClass('typeWriter');
-            $('#typeWriter').addClass('typeWriter');
-            $('#typeWriter').append("<h2 id='typeh1'>I'm a full stack developer in the Phoenix area.<br></h2>");
-            setTimeout (function(){
-                $('#typeWriter').append("<h2>That's pretty cool right?<br></h2>");
-            }, 3000);
+        if ($('#breakDiv1').hasClass('typeWriter')){
+            $('#breakDiv1').removeClass('typeWriter');
+            $('#breakDiv1').empty();
+            $('#breakDiv1').addClass('typeWriter');
+            $('#breakDiv1').append("<h2>About Me</h2>");
             setTimeout(function(){
-                $('#typeWriter').append("<h2>For just a small donation of only $500,000,000<br></h2>");
-            }, 6000);
-            setTimeout(function(){
-                $('#typeWriter').append("<h2>I can be yours today!</h2>");
-            }, 9000);
-           // $('#typeh1').text("Hi my name is Jeff, whatup yo!");
+                $('#breakDiv1').removeClass('typeWriter');
+            }, 8000);
         }
     }, {
-        offset: '25%'
+        offset: '60%'
     });
 });
