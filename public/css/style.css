@@ -23,7 +23,7 @@
 
 .nav h3 {
     padding-bottom: 4px;
-    color: #66C6C2;
+    color: #51E6FE;
     border-bottom: 1px solid #637E95;
 }
 
@@ -93,15 +93,15 @@
 }
 
 #mainJumbo {
-    background-image: url("../images/portpic2.jpg");
+    background-image: url("../images/portpic.jpg");
     height: 95vh;
 }
 
 #fullStackDiv {
-    color: #66C6C2;
-    text-shadow: -.15px 0 black, 0 .15px black, .15px 0 black, 0 -.15px black;
+    color: #51E6FE;
+    /*text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black; */
     font-family: 'Marcellus SC', serif;
-    border-bottom: 2px solid #637E95;
+    border-bottom: 1px solid #637E95;
 }
 
 #mainJumbo h2 {
@@ -127,7 +127,7 @@
 .typeWriter h2 {
     color: whitesmoke;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #66C6C2; /* The typwriter cursor */
+    border-right: .15em solid #51E6FE; /* The typwriter cursor */
     padding-right: 0;
     margin-right: 0;
     overflow-wrap: normal;
@@ -146,7 +146,7 @@
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
-    from, to { border-color: #66C6C2 }
+    from, to { border-color: #51E6FE }
     50% { border-color: transparent }
   }
 
