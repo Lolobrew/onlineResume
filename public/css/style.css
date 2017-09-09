@@ -134,7 +134,7 @@
 #jumboTwo {
     height: 80vh;
     margin-top: -4vh;
-    background-image: url("../images/stars.jpg");
+    background-image: url("../images/sunrise.jpg");
 }
 
 .typeWriter h2 {
@@ -173,32 +173,26 @@
 #aboutDiv {
     text-indent: 2vw;
     margin-top: 4%;
-    background-color: rgba(245, 245, 245, 0.05);
+    background-color: rgba(245, 245, 245, 0.03);
     border-bottom: 1px solid #51E6FE;
+    overflow: scroll;
 }
 
 #aboutDiv p {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: 'Della Respira', serif;
+    font-size: 22px;
+    margin-top: 10px;
     color: whitesmoke;
-    line-height: 1.5em;
+    line-height: 2em;
     margin-left: 4vw;
     padding-left: 1vw;
     padding-right: 1vw;
 }
 
 
-@media screen and (max-width: 1395px){
-    #jumboTwo {
-        height: 105vh;
-    }
-}
+#jumboThree {}
 
-@media screen and (max-width: 997px){
-    #aboutDiv p {
-        font-size: 20px;
-    }
-}
+
 @media screen and (max-width: 886px) and (min-width: 636px) {
     #navWrap {
         width: 40%;
@@ -215,14 +209,15 @@
     #mainJumbo {
         margin-left: 5vw;
     }
-    #aboutDiv p {
-        font-size: 18px;
-    }
+}
+@media screen and (max-width: 1100px) and (min-width: 0px){
     #jumboTwo {
-        height: 120vh;
+        height: 100vh;
+    }
+    #aboutDiv p {
+        font-size: 16px;
     }
 }
-
 @media screen and (max-width: 739px) and (min-width: 0px) {
     .navActive {
         position: absolute;
@@ -258,8 +253,11 @@
     
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 560px){
     #aboutDiv p {
         font-size: 14px;
+    }
+    #jumboTwo {
+        height: 140vh;
     }
 }
