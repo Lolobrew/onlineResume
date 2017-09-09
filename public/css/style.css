@@ -107,7 +107,7 @@
 }
 
 #mainJumbo {
-    height: 95vh;
+    height: 90vh;
     background-image: url("../images/coffee.jpg");
     margin-left: 1.5vw;
 }
@@ -123,18 +123,18 @@
 }
 
 .breakDiv {
+    height: 10vh;
     background-color: black;
     padding-top: 0px;
     margin-top: -2%;
-    height: 10vh;
     border: 1px solid #637E95;
 }
 
 
 #jumboTwo {
-    height: 80vh;
     margin-top: -4vh;
-    background-image: url("../images/sunrise.jpg");
+    background-image: url("../images/slate.jpg");
+    padding-bottom: 15%;
 }
 
 .typeWriter h2 {
@@ -173,7 +173,7 @@
 #aboutDiv {
     text-indent: 2vw;
     margin-top: 4%;
-    background-color: rgba(245, 245, 245, 0.03);
+    background-color: rgba(128, 128, 128, 0.29);
     border-bottom: 1px solid #51E6FE;
     overflow: scroll;
 }
@@ -190,8 +190,52 @@
 }
 
 
-#jumboThree {}
+#jumboThree {
+    background-image: url("../images/glitchart.jpg");
+    width: 100vw;
+}
 
+#portfolioDiv {
+    padding-bottom: 8%;
+}
+.portLi {
+    font-size: 24px;
+}
+
+.htmlSpan {
+    color: blue;
+}
+
+.portTitle {
+    font-size: 30px;
+    color: #02BE02;
+}
+
+code :hover {
+    background-color: #FEFE94;
+}
+
+.portDesc {
+    color: #02BE02;
+}
+
+#jumboFour {
+    background-image: url("../images/green.jpg");
+    width: 100vw;
+}
+
+#exDiv {
+    padding-bottom: 10%;
+    align-content: space-around;
+}
+
+.exPost {
+    font-family: "Della Respira", serif;
+    background-color: rgba(245, 245, 245, 0.35);
+    border: 1px solid #637E95;
+    color: black;
+    text-align: center;
+}
 
 @media screen and (max-width: 886px) and (min-width: 636px) {
     #navWrap {
@@ -210,14 +254,7 @@
         margin-left: 5vw;
     }
 }
-@media screen and (max-width: 1100px) and (min-width: 0px){
-    #jumboTwo {
-        height: 100vh;
-    }
-    #aboutDiv p {
-        font-size: 16px;
-    }
-}
+
 @media screen and (max-width: 739px) and (min-width: 0px) {
     .navActive {
         position: absolute;
@@ -230,7 +267,7 @@
         margin-left: -36%;
     }
 
-    #breakDiv1 h2, .typeWriter h2 {
+    #breakDiv1 h2, .typeWriter h2, #breakDiv2 h2, #breakDiv3 h2 {
         margin-left: 5vw;
     }
     
@@ -247,8 +284,12 @@
     .navInactive {
         margin-left: -55%;
     }
-    #breakDiv1 {
+    .breakDiv {
         margin-left: 7vw;
+    }
+
+    #aboutDiv p {
+        padding-left: 4%;
     }
     
 }
@@ -256,8 +297,14 @@
 @media screen and (max-width: 560px){
     #aboutDiv p {
         font-size: 14px;
+        padding-left: 4%;
     }
-    #jumboTwo {
-        height: 130vh;
+
+    .portLi {
+        font-size: 18px;
+    }
+
+    .portTitle {
+        font-size: 22px;
     }
 }

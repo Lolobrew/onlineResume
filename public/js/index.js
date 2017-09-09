@@ -49,7 +49,7 @@ $(document).ready(function(){
         offset: '60%'
     });
 
-    var waypoint = $('#breakDiv2').waypoint(function(direction){
+    var waypoint2 = $('#breakDiv2').waypoint(function(direction){
         if ($('#breakDiv2').hasClass('typeWriter')){
             $('#breakDiv2').removeClass('typeWriter');
             $('#breakDiv2').empty();
@@ -60,7 +60,21 @@ $(document).ready(function(){
             }, 8000);
         }
     }, {
-        offset: '60%'
+        offset: '32%'
+    });
+
+    var waypoint3 = $('#breakDiv3').waypoint(function(direction){
+        if ($('#breakDiv3').hasClass('typeWriter')){
+            $('#breakDiv3').removeClass('typeWriter');
+            $('#breakDiv3').empty();
+            $('#breakDiv3').addClass('typeWriter');
+            $('#breakDiv3').append("<h2>Experience</h2>");
+            setTimeout(function(){
+                $('#breakDiv3').removeClass('typeWriter');
+            }, 8000);
+        }
+    }, {
+        offset: '32%'
     });
 
     
