@@ -165,7 +165,7 @@
   }
 
 
-#breakDiv1 h2 {
+.breakDiv h2 {
     letter-spacing: .15em;
     font-weight: bold;
 }
@@ -258,6 +258,6 @@
         font-size: 14px;
     }
     #jumboTwo {
-        height: 140vh;
+        height: 130vh;
     }
 }
