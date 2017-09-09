@@ -17,7 +17,6 @@
 
 #caretDiv {
     position: relative;
-    left: -1%;
     top: 20%;
 }
 
@@ -84,7 +83,7 @@
     color: whitesmoke;
     cursor: pointer;
     float: right;
-    left: -10%;
+    left: -9%;
     top: -5%;
 }
 
@@ -97,7 +96,6 @@
 }
 
 .jumbotron {
-    height: 95vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,7 +107,8 @@
 }
 
 #mainJumbo {
-    background-image: url("../images/portpic.jpg");
+    height: 95vh;
+    background-image: url("../images/coffee.jpg");
     margin-left: 1.5vw;
 }
 
@@ -133,9 +132,9 @@
 
 
 #jumboTwo {
+    height: 80vh;
     margin-top: -4vh;
-    height: 95vh;
-    background-image: url("../images/phx.jpg");  
+    background-image: url("../images/stars.jpg");
 }
 
 .typeWriter h2 {
@@ -165,15 +164,41 @@
     50% { border-color: transparent }
   }
 
-  #breakDiv1 {
-    margin-top: .5em;
-}
 
 #breakDiv1 h2 {
     letter-spacing: .15em;
     font-weight: bold;
 }
 
+#aboutDiv {
+    text-indent: 2vw;
+    margin-top: 4%;
+    background-color: rgba(245, 245, 245, 0.05);
+    border-bottom: 1px solid #51E6FE;
+}
+
+#aboutDiv p {
+    font-size: 24px;
+    font-weight: bold;
+    color: whitesmoke;
+    line-height: 1.5em;
+    margin-left: 4vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+
+@media screen and (max-width: 1395px){
+    #jumboTwo {
+        height: 105vh;
+    }
+}
+
+@media screen and (max-width: 997px){
+    #aboutDiv p {
+        font-size: 20px;
+    }
+}
 @media screen and (max-width: 886px) and (min-width: 636px) {
     #navWrap {
         width: 40%;
@@ -189,6 +214,12 @@
     }
     #mainJumbo {
         margin-left: 5vw;
+    }
+    #aboutDiv p {
+        font-size: 18px;
+    }
+    #jumboTwo {
+        height: 120vh;
     }
 }
 
@@ -210,7 +241,7 @@
     
 }
 
-@media screen and (max-width: 800px) and (min-width: 0px){
+@media screen and (max-width: 750px) and (min-width: 0px){
     #caretTab {
        left: 1%;
     }
@@ -225,4 +256,10 @@
         margin-left: 7vw;
     }
     
+}
+
+@media screen and (max-width: 380px){
+    #aboutDiv p {
+        font-size: 14px;
+    }
 }

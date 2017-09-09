@@ -14,25 +14,7 @@ $(document).ready(function(){
         }
     });
 
-    var picArray = ["../images/motorcycling.jpg", "../images/homebrewing.jpg", "../images/dogs.jpg", "../images/webdev.jpg", "../images/hiking.jpg" ];
-    var wordArray = ["Motorcycling", "Homebrewing", "My Dogs", "Web Development", "Hiking"];
-    var currentIndex = -1;
-
-
-
-    /*var changeJumbo = setInterval(function(){
-        currentIndex++;
-        if (currentIndex >= picArray.length){
-            currentIndex = 0;
-        }
-        var picState = picArray[currentIndex];
-        var wordState = wordArray[currentIndex];
-        function setJumboPic(picState, wordState){
-            $('#mainJumbo').css('background-image', 'url('+ picState +')');
-            $('#themeWord').html(wordState);
-        }
-        setJumboPic(picState, wordState);
-    }, 8000);*/
+    $('#aboutDiv').hide();
 
     function addBounce(){
         if($('#navWrap').hasClass('navInactive')){
@@ -51,7 +33,7 @@ $(document).ready(function(){
         removeBounce();
     }, 9000);
 
-    var waypoints = $('.breakDiv').waypoint(function(direction){
+    var waypoint1 = $('#breakDiv1').waypoint(function(direction){
 
         if ($('#breakDiv1').hasClass('typeWriter')){
             $('#breakDiv1').removeClass('typeWriter');
@@ -61,8 +43,25 @@ $(document).ready(function(){
             setTimeout(function(){
                 $('#breakDiv1').removeClass('typeWriter');
             }, 8000);
+            $('#aboutDiv').show();
         }
     }, {
         offset: '60%'
     });
+
+    var waypoint = $('#breakDiv2').waypoint(function(direction){
+        if ($('#breakDiv2').hasClass('typeWriter')){
+            $('#breakDiv2').removeClass('typeWriter');
+            $('#breakDiv2').empty();
+            $('#breakDiv2').addClass('typeWriter');
+            $('#breakDiv2').append("<h2>Portfolio</h2>");
+            setTimeout(function(){
+                $('#breakDiv2').removeClass('typeWriter');
+            }, 8000);
+        }
+    }, {
+        offset: '60%'
+    });
+
+    
 });
