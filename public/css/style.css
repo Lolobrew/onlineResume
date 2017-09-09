@@ -110,7 +110,7 @@
 
 #mainJumbo {
     background-image: url("../images/portpic.jpg");
-    margin-left: 1vw;
+    margin-left: 1.5vw;
 }
 
 #fullStackDiv {
@@ -178,11 +178,17 @@
     #navWrap {
         width: 40%;
     }
+    #mainJumbo {
+        margin-left: 2vw;
+    }
 }
 
 @media screen and (max-width: 636px) and (min-width: 0px){
     #navWrap {
         width: 60%;
+    }
+    #mainJumbo {
+        margin-left: 5vw;
     }
 }
 
@@ -214,6 +220,9 @@
 @media screen and (max-width: 636px){
     .navInactive {
         margin-left: -55%;
+    }
+    #breakDiv1 {
+        margin-left: 7vw;
     }
     
 }
