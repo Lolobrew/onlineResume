@@ -77,5 +77,19 @@ $(document).ready(function(){
         offset: '32%'
     });
 
+
+    var waypoint4 = $('#breakDiv4').waypoint(function(direction){
+        if ($('#breakDiv4').hasClass('typeWriter')){
+            $('#breakDiv4').removeClass('typeWriter');
+            $('#breakDiv4').empty();
+            $('#breakDiv4').addClass('typeWriter');
+            $('#breakDiv4').append("<h2>Contact Me</h2>");
+            setTimeout(function(){
+                $('#breakDiv4').removeClass('typeWriter');
+            }, 8000);
+        }
+    }, {
+        offset: '35%'
+    });
     
 });

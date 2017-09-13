@@ -96,7 +96,7 @@
 }
 
 .jumbotron {
-    width: 100%;
+    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -124,6 +124,7 @@
 
 .breakDiv {
     height: 10vh;
+    width: 105vw;
     background-color: black;
     padding-top: 0px;
     margin-top: -2%;
@@ -236,6 +237,12 @@ code :hover {
     color: black;
     text-align: center;
 }
+
+#jumboFive {
+    background-image: url("../images/arizona.jpg");
+}
+
+
 
 @media screen and (max-width: 886px) and (min-width: 636px) {
     #navWrap {
