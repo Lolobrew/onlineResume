@@ -1,0 +1,112 @@
+#navWrap {
+    background-color: black;
+    text-align: center;
+    float: left;
+    position: fixed;
+    transition: .3s;
+    z-index: 1000;
+    width: 25%;
+    border-right: 1px solid #637E95;
+    margin-left: -3%;
+    float: left;
+    overflow: scroll;
+    height: 105%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#portPic {
+    height: 35%;
+    width: 35%;
+    border-radius: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+#caretTab {
+    z-index: 1001;
+    background-color: transparent;
+    height: 100vh;
+    width: 2%;
+    margin-left: -1%;
+}
+
+.active {
+    position: relative;
+    left: 20%;
+}
+
+#navbarIcon {
+    color: magenta;
+    cursor: pointer;
+    position: relative;
+    top: 15%;
+}
+
+.nav h3 {
+    padding-bottom: 2%;
+    color: #51E6FE;
+    border-bottom: 1px solid #637E95;
+}
+
+.nav li {
+    color: whitesmoke;
+    padding-bottom: 2%;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.nav li:hover {
+    color: #637E95;
+}
+
+#navContact {
+    padding-bottom: 3vh;
+}
+
+#navContact h5 {
+    text-align: left;
+}
+
+#navLinks {
+    padding-bottom: 30%;
+}
+
+#navLinks a {
+    color: whitesmoke;
+    justify-content: space-around;
+    margin: 0;
+    padding: 4px;
+}
+
+#navLinks a:hover {
+    background-color: black;
+    color: #637E95;
+}
+
+#navLinks a:visited {
+    background-color: black;
+}
+
+#navLinks  li{
+    display: inline-flex;
+    padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    #navWrap {
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #navWrap {
+        width: 30%;
+    }
+
+}

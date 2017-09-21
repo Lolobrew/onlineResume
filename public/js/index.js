@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+    //on click of caret, toggle navbar left and right
     $('#navbarIcon').on('click', function(e){
         if($('#navWrap').hasClass('navInactive')){
             $('#navWrap').removeClass('navInactive');
@@ -16,16 +17,19 @@ $(document).ready(function(){
 
     $('#aboutDiv').hide();
 
+    //bounce caret for visibility
     function addBounce(){
         if($('#navWrap').hasClass('navInactive')){
             $('#navbarIcon').addClass('animated bounce');
         }
     };
 
+    //stop caret bounce
     function removeBounce(){
         $('#navbarIcon').removeClass('animated bounce');
     };
 
+    //timer for caret
     setInterval(function(){
         addBounce();
     }, 8000);
@@ -33,6 +37,7 @@ $(document).ready(function(){
         removeBounce();
     }, 9000);
 
+    //breakDiv1
     var waypoint1 = $('#breakDiv1').waypoint(function(direction){
 
         if ($('#breakDiv1').hasClass('typeWriter')){
@@ -49,6 +54,7 @@ $(document).ready(function(){
         offset: '60%'
     });
 
+    //breakDiv2
     var waypoint2 = $('#breakDiv2').waypoint(function(direction){
         if ($('#breakDiv2').hasClass('typeWriter')){
             $('#breakDiv2').removeClass('typeWriter');
@@ -63,6 +69,7 @@ $(document).ready(function(){
         offset: '32%'
     });
 
+    //breakDiv3
     var waypoint3 = $('#breakDiv3').waypoint(function(direction){
         if ($('#breakDiv3').hasClass('typeWriter')){
             $('#breakDiv3').removeClass('typeWriter');
@@ -77,7 +84,7 @@ $(document).ready(function(){
         offset: '32%'
     });
 
-
+    //breakDiv4
     var waypoint4 = $('#breakDiv4').waypoint(function(direction){
         if ($('#breakDiv4').hasClass('typeWriter')){
             $('#breakDiv4').removeClass('typeWriter');
@@ -91,5 +98,29 @@ $(document).ready(function(){
     }, {
         offset: '35%'
     });
+
+    var count = 0;
+
+    var iArr = [$('#fbI'), $("#twitterI"), $("#githubI"), $("#linkedInI"), $("#stackOI")];
+
+    function stopActive(count){
+        if($('.fa').hasClass('active')){
+            $('.fa').removeClass('active');
+        };
+ 
+    };
+
+
+    function startActive(count){
+
+        iArr[count].addClass("active");
+
+        setTimeout(function(){
+            stopActive(count);
+        }, 4000);
+
+
+    }
     
+    startActive(count);
 });
