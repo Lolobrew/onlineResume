@@ -111,9 +111,11 @@ $(document).ready(function(){
         var text = $('#message').val() + "     || Sender address:    " + from + "   ||  ";
         $.get("/send",{from:from,subject:subject,text:text},function(data){
             $('#myModal').modal("hide");
-            if(data=="sent")
+            if (data =="sent")
             {
                 alert("Your email has been sent!");
+            } else {
+                alert("There was an error sending your email, please try again.");
             }
         });
     });
