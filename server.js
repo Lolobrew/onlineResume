@@ -38,6 +38,7 @@ app.get('/send', function(req, res) {
   smtpTransport.sendMail(mailOptions, function(error, response){
     if (error){
       console.log(error);
+      alert(error);
       res.end("error");
     }
     else {

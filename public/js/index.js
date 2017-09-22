@@ -114,7 +114,7 @@ $(document).ready(function(){
             if (data =="sent")
             {
                 alert("Your email has been sent!");
-            } else {
+            } else if (data == "error"){
                 alert("There was an error sending your email, please try again.");
             }
         });
