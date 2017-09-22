@@ -117,6 +117,7 @@ $(document).ready(function(){
             } else if (data == "error"){
                 alert("There was an error sending your email, please try again.");
             }
+        }).done(function(data){
             $('#from').val("");
             $('#subject').val("");
             $('#message').val("");
