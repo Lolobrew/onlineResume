@@ -145,6 +145,7 @@
     padding-bottom: 15%;
 }
 
+
 .typeWriter h2 {
     color: whitesmoke;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -155,7 +156,7 @@
     white-space: nowrap; /* Keeps the content on a single line */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 5.0s steps(50, end),
+      typing 5s steps(50, end),
       blink-caret .75s step-end infinite;
   }
 
@@ -177,6 +178,7 @@
     letter-spacing: .15em;
     font-weight: bold;
 }
+
 
 #aboutDiv {
     text-indent: 2vw;
@@ -252,16 +254,6 @@ code :hover {
     margin-left: -4%;
 }
 
-#socialMedia i.active{
-    padding: 0;
-    margin-top: 0px;
-    animation-name: iconChange;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-}
-
 
 #fbI {
     color: #3b5998;
@@ -297,10 +289,50 @@ code :hover {
         margin-left: -10%;
     }
     .breakDiv {
-        height: 5vh;
+        height: 7vh;
     }
     #mainJumbo {
         height: 45vh;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .typeWriter h2, .breakDiv h2 {
+        margin-top: 2%;
+    }
+    .breakDiv {
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #navWrap {
+        width: 25%;
+    }
+    .navInactive{
+        margin-left: -22.5%;
+    }
+    .jumbotron {
+        width: 110%;
+    }
+    #jumboTwo {
+        width: 100%;
+    }
+    #aboutDiv {
+        margin-left: 4%;
+    }
+    #exDiv {
+        margin-left: 3%;
+    }
+    #links {
+        margin-left: 15%;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    #navWrap {
+        width: 40%;
     }
 }
 /*@media screen and (max-width: 886px) and (min-width: 636px) {

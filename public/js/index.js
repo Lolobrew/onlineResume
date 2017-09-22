@@ -96,10 +96,28 @@ $(document).ready(function(){
             }, 8000);
         }
     }, {
-        offset: '35%'
+        offset: '40%'
     });
 
-    var count = 0;
+    $('#emailLink').on("click", function(e){
+        e.preventDefault();
+        $('#myModal').modal("show");
+    });
+
+    $('#sendBtn').on("click", function(e){
+        e.preventDefault();
+        var from = $('#from').val().trim();
+        var subject = $('#subject').val()
+        var text = $('#message').val() + "     || Sender address:    " + from + "   ||  ";
+        $.get("/send",{from:from,subject:subject,text:text},function(data){
+            $('#myModal').modal("hide");
+            if(data=="sent")
+            {
+                alert("Your email has been sent!");
+            }
+        });
+    });
+    /*var count = 0;
 
     var iArr = [$('#fbI'), $("#twitterI"), $("#githubI"), $("#linkedInI"), $("#stackOI")];
 
@@ -122,5 +140,5 @@ $(document).ready(function(){
 
     }
     
-    startActive(count);
+    startActive(count);*/
 });
