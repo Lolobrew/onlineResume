@@ -186,7 +186,6 @@
     margin-left: 1%;
     background-color: rgba(128, 128, 128, 0.29);
     border-bottom: 1px solid #51E6FE;
-    overflow: scroll;
 }
 
 #aboutDiv p {
@@ -275,6 +274,10 @@ code :hover {
     color: #FF9900;
 }
 
+.modal-title {
+    height: 1vh;
+}
+
 @keyframes iconChange {
     from { box-shadow: 0 0 40px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 55px #fff, 0 0 75px #fff;
     background-color: #fff;}
@@ -294,29 +297,64 @@ code :hover {
     #mainJumbo {
         height: 45vh;
     }
-}
-
-@media screen and (max-width: 800px){
-    .typeWriter h2, .breakDiv h2 {
-        margin-top: 2%;
-    }
-    .breakDiv {
-        height: 10vh;
-    }
-}
-
-@media screen and (max-width: 768px){
     #navWrap {
         width: 25%;
     }
     .navInactive{
         margin-left: -22.5%;
     }
+}
+
+@media screen and (max-width: 800px){
+    #navWrap {
+        width: 26%;
+    }
+    .typeWriter h2, .breakDiv h2 {
+        margin-top: 2%;
+    }
+    #mainJumbo {
+        height: 80vh;
+    }
+    .breakDiv {
+        height: 9vh;
+    }
+    .navInactive {
+        margin-left: -23.5%;
+    }
+    #aboutDiv p{
+        font-size: 18px;
+    }
+    #aboutDiv {
+        width: 90vw;
+        margin-left: 1%;
+    }
+    .exPost {
+        width: 80vw;
+        margin-left: 2%;
+    }
+    #links {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #navWrap {
+        width: 30%;
+    }
+    .navInactive{
+        margin-left: -27.5%;
+    }
     .jumbotron {
         width: 110%;
     }
+    #mainJumbo {
+        height: 55vh;
+    }
     #jumboTwo {
         width: 100%;
+    }
+    .breakDiv {
+        height: 6vh;
     }
     #aboutDiv {
         margin-left: 4%;
@@ -330,9 +368,43 @@ code :hover {
 
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 601px) {
     #navWrap {
         width: 40%;
+    }
+    .navInactive{
+        margin-left: -37.5%;
+    }
+    .navActive{
+        margin-left: -3.5%;
+    }
+    #caretTab {
+        margin-right: 0;
+        padding-right: 0;
+        position: relative;
+        left: -4.5%;
+    }
+    #fullStackDiv{
+        margin-left: 5%;
+    }
+    #devh2{
+        font-size: 22px;
+        margin-left: 5%;
+    }
+    #aboutDiv {
+        margin-left: 8%;
+    }
+    #portfolioDiv {
+        margin-left: 5%;
+    }
+    #exDiv {
+        margin-left: 10%;
+    }
+    .breakDiv h2, .typeWriter h2 {
+        margin-left: 15%;
+    }
+    #links {
+        display: inline-block;
     }
 }
 /*@media screen and (max-width: 886px) and (min-width: 636px) {

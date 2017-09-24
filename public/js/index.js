@@ -66,7 +66,7 @@ $(document).ready(function(){
             }, 8000);
         }
     }, {
-        offset: '32%'
+        offset: '45%'
     });
 
     //breakDiv3
@@ -81,7 +81,7 @@ $(document).ready(function(){
             }, 8000);
         }
     }, {
-        offset: '32%'
+        offset: '45%'
     });
 
     //breakDiv4
@@ -96,7 +96,7 @@ $(document).ready(function(){
             }, 8000);
         }
     }, {
-        offset: '40%'
+        offset: '45%'
     });
 
     $('#emailLink').on("click", function(e){
