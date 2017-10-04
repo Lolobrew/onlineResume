@@ -110,7 +110,7 @@ $(document).ready(function(){
         var subject = $('#subject').val()
         var text = $('#message').val() + "     || Sender address:    " + from + "   ||  ";
         $.get("/send",{from:from,subject:subject,text:text},function(data){
-            $('#myModal').modal("hide");
+            
             if (data =="sent")
             {
                 alert("Your email has been sent!");
@@ -122,6 +122,7 @@ $(document).ready(function(){
             $('#subject').val("");
             $('#message').val("");
         });
+        $('#myModal').modal("toggle");
     });
     /*var count = 0;
 
