@@ -363,9 +363,6 @@ body {
     .typeWriter h2, .breakDiv h2 {
         margin-left: -10%;
     }
-    /*.breakDiv {
-        height: 7vh;
-    }*/
     #mainJumbo {
         height: 45vh;
     }
@@ -391,9 +388,6 @@ body {
     #mainJumbo {
         height: 80vh;
     }
-    /*.breakDiv {
-        height: 9vh;
-    }*/
     .navInactive {
         margin-left: -23.5%;
     }
@@ -429,18 +423,11 @@ body {
     .navInactive{
         margin-left: -27.5%;
     }
-    /*.jumbotron {
-        width: 110%;
-    }*/
+
     #mainJumbo {
         height: 55vh;
     }
-    /*#jumboTwo {
-        width: 100%;
-    }*/
-    /*.breakDiv {
-        height: 6vh;
-    }*/
+
     #aboutDiv {
         margin-left: 4%;
     }
@@ -455,10 +442,10 @@ body {
 
 @media screen and (max-width: 601px) {
     #navWrap {
-        width: 40%;
+        width: 50%;
     }
     .navInactive{
-        margin-left: -37.5%;
+        margin-left: -45.5%;
     }
     .navActive{
         margin-left: -3.5%;
@@ -494,12 +481,7 @@ body {
 }
 
 @media screen and (max-width: 568px){
-    /*#mainJumbo {
-        height: 90vh;
-    }*/
-    /*.breakDiv {
-        height: 15vh;
-    }*/
+
     #caretTab {
         position: relative;
         top: -20vh;
@@ -535,9 +517,6 @@ body {
     #caretTab {
         left: -3.5vw;
     }
-    /*.breakDiv {
-        height: 10vh;
-    }*/
     #mainJumbo {
         height: 91.25vh;
     }
@@ -556,65 +535,3 @@ body {
 
     
 }
-/*@media screen and (max-width: 886px) and (min-width: 636px) {
-    #navWrap {
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 636px) and (min-width: 0px){
-    #navWrap {
-        width: 64%;
-    }
-}
-
-@media screen and (max-width: 739px) and (min-width: 0px) {
-    .navActive {
-        position: absolute;
-        left: 2vw;
-    }
-}
-
-@media screen and (max-width: 872px) and (min-width: 618px){
-    .navInactive {
-        margin-left: -36%;
-    }
-
-    
-}
-
-@media screen and (max-width: 750px) and (min-width: 0px){
-    #caretTab {
-       left: 1%;
-    }
-}
-
-
-@media screen and (max-width: 636px){
-    .navInactive {
-        margin-left: -55%;
-    }
-
-    #aboutDiv p {
-        padding-left: 4%;
-    }
-    #breakDiv1 h2, .typeWriter h2, #breakDiv2 h2, #breakDiv3 h2, #breakDiv4 h2 {
-        margin-left: 2vw;
-    }
-    
-}
-
-@media screen and (max-width: 560px){
-    #aboutDiv p {
-        font-size: 14px;
-        padding-left: 4%;
-    }
-
-    .portLi {
-        font-size: 18px;
-    }
-
-    .portTitle {
-        font-size: 22px;
-    }
-}*/

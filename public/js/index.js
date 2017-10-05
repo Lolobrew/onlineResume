@@ -15,6 +15,7 @@ $(document).ready(function(){
         }
     });
 
+    //hide divs to display phone number and email
     $('#btmPhoneNumberh2').hide();
     $('#btmEmailh2').hide();
 
@@ -82,7 +83,7 @@ $(document).ready(function(){
             }, 8000);
         }
     }, {
-        offset: '45%'
+        offset: '60%'
     });
 
     //breakDiv4
@@ -97,10 +98,10 @@ $(document).ready(function(){
             }, 8000);
         }
     }, {
-        offset: '45%'
+        offset: '60%'
     });
 
-
+    //function to send Email w/ get request
     function sendEmail(){
         var from = $('#from').val().trim();
         var subject = $('#subject').val()
@@ -121,34 +122,39 @@ $(document).ready(function(){
         $('#myModal').modal("toggle");
     }
 
-
+    //show modal on click
     $('#emailLink').on("click", function(e){
         e.preventDefault();
         $('#myModal').modal("show");
     });
 
+    //show modal on click
     $('#emailBtmLink').on('click', function(e){
         e.preventDefault();
         $('#myModal').modal('show');
     })
 
+    //send email on click
     $('#sendBtn').on("click", function(e){
         e.preventDefault();
         sendEmail();
     });
 
+    //show phone number on hover
     $('#phoneBtmLink').hover(function(){
         $('#btmPhoneNumberh2').show();
     }, function(){
         $('#btmPhoneNumberh2').hide();
     });
 
+    //show email address on hover
     $('#emailBtmLink').hover(function(){
         $('#btmEmailh2').show();
     }, function(){
         $('#btmEmailh2').hide();
     });
 
+    //show/hide phone number on click adding/removing class
     $('#phoneBtmLink').on('click', function(){
         if(!$(this).hasClass("activeLink")){
             $(this).addClass("activeLink");
@@ -160,28 +166,5 @@ $(document).ready(function(){
     });
 
 
-    /*var count = 0;
-
-    var iArr = [$('#fbI'), $("#twitterI"), $("#githubI"), $("#linkedInI"), $("#stackOI")];
-
-    function stopActive(count){
-        if($('.fa').hasClass('active')){
-            $('.fa').removeClass('active');
-        };
- 
-    };
-
-
-    function startActive(count){
-
-        iArr[count].addClass("active");
-
-        setTimeout(function(){
-            stopActive(count);
-        }, 4000);
-
-
-    }
-    
-    startActive(count);*/
+//closing brackets
 });
