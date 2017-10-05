@@ -515,13 +515,25 @@ body {
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 400px){
     #navWrap {
         width: 62%;
-        left: -0.3vw;
+        left: -0.2vw;
     }
     .navInactive {
         margin-left: -53%;
+    }
+}
+@media screen and (max-width: 320px){
+    #navWrap {
+        width: 85%;
+        left: -1vw;
+    }
+    .navInactive {
+        margin-left: -75%;
+    }
+    .navActive{
+        margin-left: -2%;
     }
     #caretTab {
         left: -3.5vw;
@@ -541,6 +553,5 @@ body {
     #btmPhoneNumberh2, #btmEmailh2 {
         font-size: 18px;
     }
-
-    
 }
+

@@ -165,45 +165,47 @@ $(document).ready(function(){
         }
     });
 
+
+    function scrolling(division){
+        $('html, body').animate({
+            scrollTop: division.offset().top
+        }, 100);
+        $('#navWrap').removeClass('navActive');
+        $('#navWrap').addClass('navInactive'); 
+        $('#navbarIcon').removeClass('fa-caret-left');
+        $('#navbarIcon').addClass('fa-caret-right');
+    }
+
+
     //click on nav link, scroll to top
     $("#top").on("click", function( e ) {        
         e.preventDefault();        
-        $('html, body').animate({
-            scrollTop: $("#mainJumbo").offset().top
-        }, 100);        
+        scrolling($('#mainJumbo'));
     });
 
     //click on nav link, scroll to about me
     $("#about").on("click", function( e ) {        
         e.preventDefault();        
-        $('html, body').animate({
-            scrollTop: $("#jumboTwo").offset().top
-        }, 100);        
+        scrolling($('#jumboTwo'));
     });
 
     //click on nav link, scroll to portfolio
     $("#portfolio").on("click", function( e ) {        
         e.preventDefault();        
-        $('html, body').animate({
-            scrollTop: $("#jumboThree").offset().top
-        }, 100);        
+        scrolling($('#jumboThree'));
     });
 
     //click on nav link, scroll to experience
     $("#experience").on("click", function( e ) {        
         e.preventDefault();        
-        $('html, body').animate({
-            scrollTop: $("#jumboFour").offset().top
-        }, 100);        
+        scrolling($('#jumboFour'));
     });
 
     //click on nav link, scroll to contact
     $("#contact").on("click", function( e ) {        
         e.preventDefault();        
-        $('html, body').animate({
-            scrollTop: $("#jumboFive").offset().top
-        }, 100);        
-    })
+        scrolling($('#jumboFive'));
+    });
 
 //closing brackets
 });
