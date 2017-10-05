@@ -130,14 +130,16 @@
 }
 
 .breakDiv {
-    height: 10vh;
+    /*height: 10vh;*/
     width: 100%;
     background-color: black;
     padding-top: 0px;
     margin-top: -2%;
-    border: 1px solid #637E95;
+    border-top: 1px solid #637E95;
+    border-bottom: 1px solid #637E95;
     margin-left: 2vw;
     overflow: hidden;
+    min-height: 5vh;
 }
 
 
@@ -311,6 +313,7 @@ code :hover {
 
 #footer{
     border-bottom: none;
+    height: 5vh;
 }
 
 body {
@@ -357,9 +360,9 @@ body {
     .typeWriter h2, .breakDiv h2 {
         margin-left: -10%;
     }
-    .breakDiv {
+    /*.breakDiv {
         height: 7vh;
-    }
+    }*/
     #mainJumbo {
         height: 45vh;
     }
@@ -385,9 +388,9 @@ body {
     #mainJumbo {
         height: 80vh;
     }
-    .breakDiv {
+    /*.breakDiv {
         height: 9vh;
-    }
+    }*/
     .navInactive {
         margin-left: -23.5%;
     }
@@ -423,18 +426,18 @@ body {
     .navInactive{
         margin-left: -27.5%;
     }
-    .jumbotron {
+    /*.jumbotron {
         width: 110%;
-    }
+    }*/
     #mainJumbo {
         height: 55vh;
     }
-    #jumboTwo {
+    /*#jumboTwo {
         width: 100%;
-    }
-    .breakDiv {
+    }*/
+    /*.breakDiv {
         height: 6vh;
-    }
+    }*/
     #aboutDiv {
         margin-left: 4%;
     }
@@ -488,12 +491,12 @@ body {
 }
 
 @media screen and (max-width: 568px){
-    #mainJumbo {
+    /*#mainJumbo {
         height: 90vh;
-    }
-    .breakDiv {
+    }*/
+    /*.breakDiv {
         height: 15vh;
-    }
+    }*/
     #caretTab {
         position: relative;
         top: -20vh;
@@ -529,9 +532,9 @@ body {
     #caretTab {
         left: -3.5vw;
     }
-    .breakDiv {
+    /*.breakDiv {
         height: 10vh;
-    }
+    }*/
     #mainJumbo {
         height: 91.25vh;
     }
