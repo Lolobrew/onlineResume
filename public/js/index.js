@@ -15,9 +15,10 @@ $(document).ready(function(){
         }
     });
 
-    //hide divs to display phone number and email
+    //hide divs to display phone number, email, resume
     $('#btmPhoneNumberh2').hide();
     $('#btmEmailh2').hide();
+    $('#pdfBtmh2').hide();
 
     //bounce caret for visibility
     function addBounce(){
@@ -154,15 +155,11 @@ $(document).ready(function(){
         $('#btmEmailh2').hide();
     });
 
-    //show/hide phone number on click adding/removing class
-    $('#phoneBtmLink').on('click', function(){
-        if(!$(this).hasClass("activeLink")){
-            $(this).addClass("activeLink");
-            $('#btmPhoneNumberh2').show();
-        } else {
-            $(this).removeClass('activeLink');
-            $('#btmPhoneNumberh2').hide();
-        }
+    //show 'my resume' on hover
+    $('#pdfBtmLink').hover(function(){
+        $('#pdfBtmh2').show();
+    }, function(){
+        $('#pdfBtmh2').hide();
     });
 
 

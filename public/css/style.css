@@ -265,7 +265,7 @@ code :hover {
 
 #jumboFive {
     background-image: url("../images/brickwall.jpg");
-    height: 80vh;
+    height: 200%;
     margin-left: -4%;
 }
 
@@ -295,19 +295,25 @@ code :hover {
 }
 
 #emailBtmLink {
-    color: whitesmoke;
     font-size: 160px;
-    position: relative;
-    top: 15px;
-    left: -10px;
+    color: white;
 }
 
 #phoneBtmLink {
-    color: whitesmoke;
     font-size: 200px;
     margin-top: 5px;
+    color: white;
 }
 
+#pdfBtmLink {
+    font-size: 120px;
+    margin-top: 30px;
+    color: white;
+}
+
+.btmLinks {
+    padding-bottom: 40px;
+}
 
 #emailBtmLink:hover {
     color: #1dcaff;
@@ -381,10 +387,6 @@ body {
     .navInactive{
         margin-left: -22.5%;
     }
-    .faBtmLinks {
-        display: inline;
-        flex-wrap: nowrap;
-    }
 }
 
 @media screen and (max-width: 800px){
@@ -417,11 +419,8 @@ body {
     #jumboFive {
         height: 100vh;
     }
-    #faBtmLinks {
+    .faBtmLinks {
         display: inline;
-        position: relative;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 }
 
@@ -550,7 +549,7 @@ body {
     .portTitle {
         font-size: 20px;
     }
-    #btmPhoneNumberh2, #btmEmailh2 {
+    #btmPhoneNumberh2, #btmEmailh2, #pdfBtmh2 {
         font-size: 18px;
     }
 }
