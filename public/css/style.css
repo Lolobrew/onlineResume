@@ -61,6 +61,15 @@ html, body {
     text-align: left;
 }
 
+#phoneNumber {
+    text-decoration: none;
+    color: white;
+}
+
+#phoneNumber:hover {
+    color: #637E95;
+}
+
 #navContact h3 {
     text-align: center;
 }
