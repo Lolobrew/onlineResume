@@ -15,12 +15,12 @@
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/e2298cb09c.js"></script>
-
-    <!-- Google Fonts "Marcellus SC" -->
-    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
     
     <!-- Google Fonts Della Respira -->
     <link href="https://fonts.googleapis.com/css?family=Della+Respira" rel="stylesheet">
+    
+    <!-- Google Fonts Vampiro One -->
+    <link href="https://fonts.googleapis.com/css?family=Vampiro+One" rel="stylesheet">
 
     <!-- animate css -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <div class = "container-fluid">
+    <div class = "container-fluid" id="content">
         <!--sidebar nav toggleable -->
         <div class="card navInactive" id="navWrap">
             <div class="row">
@@ -234,62 +234,88 @@
         <div class="jumbotron container-fluid" id="jumboFive">
             <div class="row">
                 <div class="col-md-10 col-md-offset-2" id="links">
-                    <h3>Links!</h3>
+                    <h2>Links!</h2>
+                    <br>
                     <div class="row">
-                        <div class="col-sm-1">
+                        <div class="col-sm-1 linkDiv">
                             <a href="https://www.facebook.com/jeff.schultz.7121" target="_blank">
-                                <i class="fa fa-facebook-official fa-5x" aria-hidden="true" id="fbI"></i>
+                                <i class="fa fa-facebook-official fa-5x falink" aria-hidden="true" id="fbI"></i>
                             </a>
                         </div>
-                        <div class="col-sm-1 col-sm-offset-1">
+                        <div class="col-sm-1 col-sm-offset-1 linkDiv">
                             <a href="https://twitter.com/Lolobrew1" target="_blank">
-                                <i class="fa fa-twitter-square fa-5x" aria-hidden="true" id="twitterI"></i>
+                                <i class="fa fa-twitter-square fa-5x falink" aria-hidden="true" id="twitterI"></i>
                             </a>
                         </div>
-                        <div class="col-sm-1 col-sm-offset-1">
+                        <div class="col-sm-1 col-sm-offset-1 linkDiv">
                             <a href="https://github.com/Lolobrew" target="_blank">
-                                <i class="fa fa-github-square fa-5x" aria-hidden="true" id="githubI"></i>
+                                <i class="fa fa-github-square fa-5x falink" aria-hidden="true" id="githubI"></i>
                             </a>
                         </div>
-                        <div class="col-sm-1 col-sm-offset-1">
+                        <div class="col-sm-1 col-sm-offset-1 linkDiv">
                             <a href="https://www.linkedin.com/in/jeffschultzjs/" target="_blank">
-                                <i class="fa fa-linkedin-square fa-5x" aria-hidden="true" id="linkedInI"></i>
+                                <i class="fa fa-linkedin-square fa-5x falink" aria-hidden="true" id="linkedInI"></i>
                             </a>
                         </div>
-                        <div class="col-sm-1 col-sm-offset-1" id="stackODiv">
+                        <div class="col-sm-1 col-sm-offset-1 linkDiv" id="stackODiv">
                             <a href="https://stackoverflow.com/users/7735701/lolobrew" target="_blank">
-                                <i class="fa fa-stack-overflow fa-5x" aria-hidden="true" id="stackOI"></i>
+                                <i class="fa fa-stack-overflow fa-5x falink" aria-hidden="true" id="stackOI"></i>
                             </a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>    
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-3 col-sm-offset-2 faBtmLinks">
+                            <h2>Email Me: </h2>
+                            <i class="fa fa-envelope-o fa-4x" aria-hidden="true" id="emailBtmLink"></i>
+                            <div class="row">
+                                <h2 id="btmEmailh2">jeffschultz.js@gmail.com</h2>
+                            </div>
+                        </div> 
+                        <div class="col-sm-3 col-sm-offset-1 faBtmLinks">
+                            <h2>Ring Me: </h2>
+                            <i class="fa fa-mobile fa-5x" aria-hidden="true" id="phoneBtmLink"></i>
+                            <div class="row">
+                                <h2 id="btmPhoneNumberh2">623-258-3640</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h3 class="modal-title">Email Me</h3>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                    <input type="email" id = "from" size="50px" placeholder="Your email address">
-                    <br>
-                    <br>
-                    <input type="text" name="subject" id="subject" placeholder="Subject line" size = "50px">
-                    <br>
-                    <br>
-                    <textarea name="message" id="message" cols="60" rows="10" placeholder="Your message!"></textarea>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" type="submit" id="sendBtn">Send</button>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
+        <div class="row">
+            <div class="col-md-12 breakDiv" id="footer">
             </div>
         </div>
+        <div class="modal fade" id="myModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Email Me</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="email" id = "from" size="50px" placeholder="Your email address">
+                            <br>
+                            <br>
+                            <input type="text" name="subject" id="subject" placeholder="Subject line" size = "50px">
+                            <br>
+                            <br>
+                            <textarea name="message" id="message" cols="60" rows="10" placeholder="Your message!"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" type="submit" id="sendBtn">Send</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
      <!--wrapping container -->
     </div>         

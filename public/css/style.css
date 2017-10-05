@@ -11,8 +11,8 @@
     float: left;
     overflow: scroll;
     padding-right: 0;
-    height: 105%;
-    margin-bottom: 0;
+    height: 100vh;
+    margin-bottom: 0 auto;
 }
 
 #caretDiv {
@@ -100,7 +100,7 @@
 }
 
 .jumbotron {
-    width: 120%;
+    width: 110%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -111,6 +111,7 @@
     margin-left: 0;
     padding-left: 0;
     clear: both;
+    overflow: hidden;
 }
 
 #mainJumbo {
@@ -130,12 +131,13 @@
 
 .breakDiv {
     height: 10vh;
-    width: 115%;
+    width: 100%;
     background-color: black;
     padding-top: 0px;
     margin-top: -2%;
     border: 1px solid #637E95;
-    margin-left: -1vw;
+    margin-left: 2vw;
+    overflow: hidden;
 }
 
 
@@ -183,7 +185,7 @@
 #aboutDiv {
     text-indent: 2vw;
     margin-top: 4%;
-    margin-left: 1%;
+    margin-left: 5%;
     background-color: rgba(128, 128, 128, 0.29);
     border-bottom: 1px solid #51E6FE;
 }
@@ -249,7 +251,7 @@ code :hover {
 
 #jumboFive {
     background-image: url("../images/brickwall.jpg");
-    height: 800px;
+    height: 80vh;
     margin-left: -4%;
 }
 
@@ -278,6 +280,70 @@ code :hover {
     height: 1vh;
 }
 
+#emailBtmLink {
+    color: whitesmoke;
+    font-size: 160px;
+    position: relative;
+    top: 15px;
+    left: -10px;
+}
+
+#phoneBtmLink {
+    color: whitesmoke;
+    font-size: 200px;
+    margin-top: 5px;
+}
+
+
+#emailBtmLink:hover {
+    color: #1dcaff;
+    cursor: pointer;
+}
+
+#phoneBtmLink:hover {
+    color: #1dcaff;
+    cursor:pointer;
+}
+
+#btmPhoneNumberh2 {
+    margin-top: -5%;
+}
+
+#footer{
+    border-bottom: none;
+}
+
+body {
+    background-color: black;
+}
+
+#links h2 {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    font-family: 'Vampiro One', cursive;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.falink:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 100%;
+}
+
+
+@keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+}
+
+
 @keyframes iconChange {
     from { box-shadow: 0 0 40px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 55px #fff, 0 0 75px #fff;
     background-color: #fff;}
@@ -302,6 +368,10 @@ code :hover {
     }
     .navInactive{
         margin-left: -22.5%;
+    }
+    .faBtmLinks {
+        display: inline;
+        flex-wrap: nowrap;
     }
 }
 
@@ -334,6 +404,15 @@ code :hover {
     }
     #links {
         margin-left: 10%;
+    }
+    #jumboFive {
+        height: 100vh;
+    }
+    #faBtmLinks {
+        display: inline;
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -403,9 +482,73 @@ code :hover {
     .breakDiv h2, .typeWriter h2 {
         margin-left: 15%;
     }
-    #links {
-        display: inline-block;
+    .linkDiv {
+        display: inline;
     }
+}
+
+@media screen and (max-width: 568px){
+    #mainJumbo {
+        height: 90vh;
+    }
+    .breakDiv {
+        height: 15vh;
+    }
+    #caretTab {
+        position: relative;
+        top: -20vh;
+    }
+    #jumboFive {
+        height: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .linkDiv i{
+        margin-top: 20px;
+    }
+    #caretTab {
+        position: relative;
+        top: -12vh;
+        left: -3vw;
+    }
+    .modal-body input, .modal-body textarea {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #navWrap {
+        width: 62%;
+        left: -0.3vw;
+    }
+    .navInactive {
+        margin-left: -53%;
+    }
+    #caretTab {
+        left: -3.5vw;
+    }
+    .breakDiv {
+        height: 10vh;
+    }
+    #mainJumbo {
+        height: 91.25vh;
+    }
+    #aboutDiv p{
+        text-align: center;
+    }
+    .portLi {
+        font-size: 18px;
+    }
+    .portTitle {
+        font-size: 20px;
+    }
+    #btmPhoneNumberh2, #btmEmailh2 {
+        font-size: 18px;
+    }
+
+    
 }
 /*@media screen and (max-width: 886px) and (min-width: 636px) {
     #navWrap {

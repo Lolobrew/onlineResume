@@ -15,7 +15,8 @@ $(document).ready(function(){
         }
     });
 
-    $('#aboutDiv').hide();
+    $('#btmPhoneNumberh2').hide();
+    $('#btmEmailh2').hide();
 
     //bounce caret for visibility
     function addBounce(){
@@ -99,13 +100,8 @@ $(document).ready(function(){
         offset: '45%'
     });
 
-    $('#emailLink').on("click", function(e){
-        e.preventDefault();
-        $('#myModal').modal("show");
-    });
 
-    $('#sendBtn').on("click", function(e){
-        e.preventDefault();
+    function sendEmail(){
         var from = $('#from').val().trim();
         var subject = $('#subject').val()
         var text = $('#message').val() + "     || Sender address:    " + from + "   ||  ";
@@ -123,7 +119,47 @@ $(document).ready(function(){
             $('#message').val("");
         });
         $('#myModal').modal("toggle");
+    }
+
+
+    $('#emailLink').on("click", function(e){
+        e.preventDefault();
+        $('#myModal').modal("show");
     });
+
+    $('#emailBtmLink').on('click', function(e){
+        e.preventDefault();
+        $('#myModal').modal('show');
+    })
+
+    $('#sendBtn').on("click", function(e){
+        e.preventDefault();
+        sendEmail();
+    });
+
+    $('#phoneBtmLink').hover(function(){
+        $('#btmPhoneNumberh2').show();
+    }, function(){
+        $('#btmPhoneNumberh2').hide();
+    });
+
+    $('#emailBtmLink').hover(function(){
+        $('#btmEmailh2').show();
+    }, function(){
+        $('#btmEmailh2').hide();
+    });
+
+    $('#phoneBtmLink').on('click', function(){
+        if(!$(this).hasClass("activeLink")){
+            $(this).addClass("activeLink");
+            $('#btmPhoneNumberh2').show();
+        } else {
+            $(this).removeClass('activeLink');
+            $('#btmPhoneNumberh2').hide();
+        }
+    });
+
+
     /*var count = 0;
 
     var iArr = [$('#fbI'), $("#twitterI"), $("#githubI"), $("#linkedInI"), $("#stackOI")];
