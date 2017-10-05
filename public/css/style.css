@@ -325,6 +325,11 @@ code :hover {
     cursor:pointer;
 }
 
+#pdfBtmLink:hover {
+    color: #1dcaff;
+    cursor: pointer;
+}
+
 #btmPhoneNumberh2 {
     margin-top: -5%;
 }
