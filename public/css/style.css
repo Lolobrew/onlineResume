@@ -555,6 +555,10 @@ body {
         font-size: 26px;
         margin-left: -2vw;
     }
+    #emailBtmLink {
+        font-size: 130px;
+        color: white;
+    }
     #emailBtmLink, #phoneBtmLink, #pdfBtmLink {
         margin-left: 16vw;
     }
