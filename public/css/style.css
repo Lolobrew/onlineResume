@@ -265,7 +265,7 @@ code :hover {
 
 #jumboFive {
     background-image: url("../images/brickwall.jpg");
-    height: 200%;
+    height: 110vh;
     margin-left: -4%;
     padding-bottom: 20vh;
 }
